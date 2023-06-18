@@ -9,8 +9,6 @@ import plotly.io as pio
 from enum import Enum
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
-AWS_ACCESS_KEY = "AKIASK6MAGUCNG2GWRSX"
-AWS_SCRET_KEY = "neomBVqvDRnF9YKjFDpy4ySBxbTDmxy1HCgSEQ8J"
 
 
 def init_jb_table_style():
