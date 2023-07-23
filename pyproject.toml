@@ -1,0 +1,38 @@
+[tool.ruff]
+line-length = 120
+select = [
+  "E",
+  "F",
+  "W",
+  "Q",
+  "UP",
+  "I",
+  "N",
+]
+target-version = "py310"
+extend-exclude = ["bundled/libs"]
+
+[tool.black]
+line-length = 120
+[tool.poetry]
+name = "sh-mlops-zoomcamp"
+version = "0.1.0"
+description = "virtual env for mlops zoomcamp"
+authors = ["Sean Hickey <seanhickey@live.ie>"]
+readme = "README.md"
+packages = [{include = "sh_mlops_zoomcamp"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scikit-learn = "^1.3.0"
+flask = "^2.3.2"
+pip = "^23.1.2"
+pandas = "^2.0.3"
+fastparquet = "^2023.7.0"
+requests = "^2.31.0"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
